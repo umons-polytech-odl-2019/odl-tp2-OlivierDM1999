@@ -1,15 +1,39 @@
 package exercise1;
 
-public class Employee {
-	public int computeSalary() {
-		return 0;
+public abstract class Employee {
+	private final String name;
+	private int workedHours=0;
+	private int sales=0;
+
+	protected Employee(String name)
+	{
+		this.name=name;
 	}
 
-	public void sell() { }
 
-	public void workOneHour() { }
+	public abstract int computeSalary();  //pour pouvoir faire le polymorphisme entre cette classe là et les 3 autres
+
+
+
+	public void sell() {
+		sales++;
+	}
+
+	public void workOneHour() {
+		workedHours++;
+
+	}
 
 	public String getName() {
-		return null;
+		return name;
+	}
+
+
+	public int getWorkedHours() {
+		return workedHours;
+	}
+
+	public int getSales() {
+		return sales;
 	}
 }

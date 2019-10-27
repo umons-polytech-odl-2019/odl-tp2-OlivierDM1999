@@ -1,6 +1,8 @@
 package exercise1;
 
-public abstract class Employee {
+import exercise2.Payable;
+
+public abstract class Employee implements Payable {
 	private final String name;
 	private int workedHours=0;
 	private int sales=0;

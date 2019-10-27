@@ -1,6 +1,8 @@
 package exercise1;
 
-public class WorkHourSalaryEmployee extends Employee
+import exercise2.Payable;
+
+public class WorkHourSalaryEmployee extends Employee implements Payable
 {
 
 	private int hourRate;

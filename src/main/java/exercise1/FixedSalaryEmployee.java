@@ -1,6 +1,8 @@
 package exercise1;
 
-public class FixedSalaryEmployee extends Employee {
+import exercise2.Payable;
+
+public class FixedSalaryEmployee extends Employee implements Payable {
 	private int Salary;
 
 	public FixedSalaryEmployee(String name, int fixedSalary)

@@ -1,6 +1,8 @@
 package exercise1;
 
-public class BaseSalaryPlusCommissionEmployee extends Employee{
+import exercise2.Payable;
+
+public class BaseSalaryPlusCommissionEmployee extends Employee implements Payable {
 	private int baseSalary;
 	private int commission;
 

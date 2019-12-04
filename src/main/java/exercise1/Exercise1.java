@@ -3,7 +3,7 @@ package exercise1;
 public class Exercise1 {
 	public Employee buildFixedSalaryEmployee(String name, int fixedSalary) {
 
-
+//Ok
 		return new FixedSalaryEmployee(name,fixedSalary);
 	}
 
